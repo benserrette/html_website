@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ben Serrette</title>
+        <title>Ben Serrette's Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                --dark: #020202;
+                --light: #f8f8f8;
+            }
+            html {
+                font-family: sans-serif;
+                background-color: var(--light);
+                color: var(--dark);
+            }
+            body {
+                max-width: 768px;
+                margin: auto;
+                padding: 0 1em;
+            }
+            footer {
+                margin: 1em auto;
+            }
+            hr {
+                border: none;
+                background-color: #555;
+                height: 1px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                html {
+                    background-color: var(--dark);
+                    color: var(--light)
+                }
+            }
+        </style>
     </head>
     <body>
-        <hgroup>
-            <h1>Ben Serrette</h1>
-            <p class="subtitle">
-                Developer, Manager, Leader
-            </p>
-        </hgroup>
-
-        <hr/>
-
+        <h1>Ben Serrette</h1>
+        <p class="subtitle">
+            <strong>Developer, Manager, Leader</strong>
+        </p>
+        <hr>
         <section id="links">
             <h2>Links</h2>
             <ul>
@@ -20,15 +48,12 @@
                 <li><a href="https://www.linkedin.com/in/benserrette/" target="linkedin">LinkedIn</a></li>
             </ul>
         </section>
-        
-        <hr />
-
+        <hr>
         <section id="about">
             <h2>About Me</h2>
             <p>
                 I'm an <b>engineering leader, mentor, and maker</b> with over 15 years of experience in software development. As the <b>IT and Engineering Director of the Observatory on Social Media (OSoMe)</b>, I help drive cutting-edge research into misinformation, social bots, and the mechanics of online influence. My team builds innovative tools that empower researchers, journalists, and policymakers to better understand and combat the spread of disinformation.
             </p>
-
             <p>
                 My leadership philosophy is rooted in <b>servant-leadership</b>&ndash;my job is to <b>equip my team with everything they need to succeed</b>. If they fail, I see that as my failure. I hire great developers and mentor them into exceptional ones, fostering a culture of <b>collaboration, creativity, and continuous improvement</b>. I believe in building software that is not just functional, but also meaningful and intuitive, ensuring that technology serves people effectively. My approach balances <b>technical excellence with strategic vision</b>, always keeping long-term sustainability and usability in mind.
             </p>
@@ -42,66 +67,65 @@
                 You may reach me directly via email at <a href="mailto:xxx@example.com" id="email">xxx@example.com</a> or on <a href="https://www.linkedin.com/in/benserrette/" target="linkedin">LinkedIn</a>. 
             </p>
         </section>
-
-        <hr />
-
-        <section id="good_skills">
-            <h2>Things I'm Good At</h2>
-
-    JavaScript
-    Vue.js, Typescript
-    HTML
-    HTML5, XHTML
-    CSS
-    Sass, Bootstrap
-    Python
-    Flask
-    PHP
-    Databases
-    SQL, PostgreSQL
-    Git
-    Github, Github Projects
-    Design
-    User Experience (UX), Interfaces, Responsive Design
-    Middleware
-    REST APIs, JSON, AWS
-    Data Visualization
-    D3, Sigma.js
-    Agile Development
-    Certified Professional Scrum Master (PSMI)
-    Illustration
-    Graphical Storytelling (Storyboarding), Comics
-    Management
-    Budgeting, Scheduling, Resource Allocation, Communication, Stakeholder Management
-    Soft Skills
-    Healthy sense of humor, Good looking
+        <hr>
+        <section id="skills">
+            <h2>Technical and Leadership Skills</h2>
+            <ul>
+                <li>Engineering Management 
+                    <ul>
+                        <li>Agile Development (PSM I)</li>
+                        <li>Team Leadership</li>
+                        <li>Hiring & Mentorship</li>
+                        <li>Technical Roadmapping</li>
+                        <li>Budget & Resource Allocation</li>
+                    </ul>
+                </li>
+                <li>Technical Strategy & Architecture 
+                    <ul>
+                        <li>Scalable Systems</li>
+                        <li>Cloud Infrastructure (AWS)</li>
+                        <li>Database Design</li>
+                        <li>REST APIs</li>
+                        <li>Distributed Systems
+                    </ul>
+                </li>
+                <li>Software Development Expertise 
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </li>
+                <li>DevOps & Tooling 
+                    <ul>
+                        <li>CI/CD Pipelines</li>
+                        <li>Cloud Deployment</li>
+                        <li>Version Control (Git, GitHub)</li>
+                        <li>Linux Administration</li>
+                    </ul>
+                </li>
+                <li>Collaboration & Communication 
+                    <ul>
+                        <li>Stakeholder Engagement</li>
+                        <li>Cross-Functional Team Leadership</li>
+                        <li>Faculty & Research Coordination</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
-
-        <hr />
-
-        <section id="worked_with_skills">
-            <h2>Other things that I've worked with</h2>
-            Javascript
-            Nuxt, AngularJS, jQuery, ES6, Promises, Closures, AJAX, React
-            CSS
-            Tailwind
-            Ruby on Rails
-            Databases
-            Redis, MySQL, Graph Databases
-            Build Tools
-            Node.js, NPM, Gulp
-            Agile Development
-            Kanban, Jira, Slack
-            Troubleshooting
-            A/V Setups, Teleconferencing, Zoom, Wire jiggling
-            Other
-            Network Science, Big Data (Hadoop), Data Collection
-        </section>
-
-        <hr />
-
+        <hr>
         <footer>
-            &copy; 2025 Ben Serrette
+            &copy; <span id="year">20XX</span> Ben Serrette
         </footer>
     </body>
-</html>
+    <script>
+        const year = document.getElementById("year");
+        year.textContent = new Date().getFullYear();
+        const [fn, ln] = document.getElementsByTagName("title")[0].text.split(/\s|'/g);
+        const eml_a = document.getElementById("email");
+        const eml = `${fn}.${ln}@outlook.com`.toLowerCase();
+        eml_a.textContent = eml;
+        eml_a.href = `mailto:${fn} ${ln}<${eml}>`;
+    </script>
