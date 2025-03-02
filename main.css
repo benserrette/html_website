@@ -1,0 +1,173 @@
+body {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 1em;
+}
+footer {
+    margin: 1em auto;
+}
+
+:root {
+    /* light theme */
+    --l-bg-color: #ffffff;
+    --l-text-color: #222222;
+    --l-link-color: #0055cc;
+    --l-link-visited: #551a8b;
+    --l-link-hover: #003399;
+    --l-link-active: #cc0000;
+    --l-accent-color: var(--l-text-color); /* For headings, horizontal rules */
+    --l-hr-color: #ddd;
+    --l-font-family: "Georgia", "Times New Roman", serif;
+
+    /* dark theme */
+    --d-bg-color: #181818;
+    --d-text-color: #e0e0e0;
+    --d-link-color: #4da6ff;
+    --d-link-visited: #bb86fc;
+    --d-link-hover: #99cfff;
+    --d-link-active: #ff6b6b;
+    --d-accent-color: #bbbbbb;
+    --d-hr-color: #444;
+    --d-font-family: "Helvetica", "Arial", sans-serif;
+
+    
+    /* purple theme */
+    --p-bg-color: #800080;
+    --p-text-color: #fefefe;
+    --p-link-color: #EED202;;
+    --p-link-visited: #a28f01;
+    --p-link-hover: #a28f01;
+    --p-link-active: #a28f01;
+    --p-accent-color: #EED202;
+    --p-hr-color: #000;
+    --p-font-family: "Comic Sans", "Comic Sans MS", "MS Comic Sans", "embeddedComicSans", cursive;
+}
+
+:root, :root .force-light {
+    --bg-color: var(--l-bg-color);
+    --text-color: var(--l-text-color);
+    --link-color: var(--l-link-color);
+    --link-visited: var(--l-link-visited);
+    --link-hover: var(--l-link-hover);
+    --link-active: var(--l-link-active);
+    --accent-color: var(--l-accent-color);
+    --hr-color: var(--l-hr-color);
+    --font-family: var(--l-font-family);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: var(--d-bg-color);
+        --text-color: var(--d-text-color);
+        --link-color: var(--d-link-color);
+        --link-visited: var(--d-link-visited);
+        --link-hover: var(--d-link-hover);
+        --link-active: var(--d-link-active);
+        --accent-color: var(--d-accent-color);
+        --hr-color: var(--d-hr-color);
+        --font-family: var(--d-font-family);
+    }
+}
+:root .force-dark {
+    --bg-color: var(--d-bg-color);
+    --text-color: var(--d-text-color);
+    --link-color: var(--d-link-color);
+    --link-visited: var(--d-link-visited);
+    --link-hover: var(--d-link-hover);
+    --link-active: var(--d-link-active);
+    --accent-color: var(--d-accent-color);
+    --hr-color: var(--d-hr-color);
+    --font-family: var(--d-font-family);
+}
+:root .force-purple {
+    --bg-color: var(--p-bg-color);
+    --text-color: var(--p-text-color);
+    --link-color: var(--p-link-color);
+    --link-visited: var(--p-link-visited);
+    --link-hover: var(--p-link-hover);
+    --link-active: var(--p-link-active);
+    --accent-color: var(--p-accent-color);
+    --hr-color: var(--p-hr-color);
+    --font-family: var(--p-font-family);
+    text-shadow: 1px 1px #000, 1px -1px #000, -1px -1px #000, -1px 1px #000, 0 -1px #000, 0 1px #000, -1px 0 #000, 1px 0 #000;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+a:active {
+    color: var(--link-active);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+    font-weight: normal;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--hr-color);
+    /* margin: 20px 0; */
+}
+
+#color_menu {
+    float: right;
+    font-family: emoji;
+}
+#color_menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+#color_menu button {
+    color: inherit;
+    background-color: inherit;
+    margin: 0;
+    padding: 2px;
+    border-radius: 0;
+    width: 32px;
+    height: 32px;
+}
+#color_menu span {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+#color_menu li:first-child button {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+#color_menu li:last-child button {
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+li a svg {
+    vertical-align: text-top;
+    fill: currentColor;
+}
+.force-purple li a svg {
+    /* stroke-width: 3px;
+    stroke: #000; */
+    vertical-align: middle;
+    filter: drop-shadow(0px 0px 2px black);
+}

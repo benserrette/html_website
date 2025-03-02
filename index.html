@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ben Serrette's Home Page</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            * {
-                --dark: #020202;
-                --light: #f8f8f8;
-            }
-            html {
-                font-family: sans-serif;
-                background-color: #f8f8f8;
-                color: #020202;
-            }
-            body {
-                max-width: 768px;
-                margin: auto;
-                padding: 0 1em;
-            }
-            footer {
-                margin: 1em auto;
-            }
-            hr {
-                border: none;
-                background-color: #555;
-                height: 1px;
-            }
-
-            @media (prefers-color-scheme: dark) {
-                html {
-                    background-color: #111111;
-                    color: #aaaaaa;
-                }
-            }
-        </style>
+        <title>Ben Serrette – Web Developer & Tech Leader</title>
+        <meta name="description" content="Ben Serrette's professional homepage – Web developer, tech leader, and digital creator.">
+        <meta name="author" content="Ben Serrette">
+        <link rel="stylesheet" href="main.css">
+        
+        <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
+        <link rel="icon" href="favicon-32x32.png" type="image/png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest">
+        
+        <meta property="og:title" content="Ben Serrette – Web Developer & Tech Leader">
+        <meta property="og:description" content="Ben Serrette's professional homepage – Web developer, tech leader, and digital creator.">
+        <!-- <meta property="og:image" content="https://yourwebsite.com/social-preview.jpg"> -->
+        <meta property="og:type" content="website">
+        
+        <!-- <meta name="twitter:card" content="summary_large_image"> -->
+        <meta name="twitter:title" content="Ben Serrette – Web Developer & Tech Leader">
+        <meta name="twitter:description" content="Web developer, tech leader, and digital creator.">
+        <!-- <meta name="twitter:image" content="https://yourwebsite.com/social-preview.jpg"> -->
+        
+        <!-- Prefetching & Performance Tweaks -->
+        <link rel="preload" href="main.css" as="style">
     </head>
+    
     <body>
         <h1>Ben Serrette</h1>
         <p class="subtitle">
@@ -44,8 +37,22 @@
         <section id="links">
             <h2>Links</h2>
             <ul>
-                <li><a href="https://github.com/benabus/" target="github">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/benserrette/" target="linkedin">LinkedIn</a></li>
+                <li>
+                    <a aria-hidden="true" tabindex="-1" href="https://github.com/benabus/" target="github"><svg width="1em" heigh="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.33-.27 2.02-.27.69 0 1.38.09 2.02.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.002 8.002 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg></a>
+                    <a href="https://github.com/benabus/" target="github">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a aria-hidden="true" tabindex="-1" href="https://www.linkedin.com/in/benserrette/" target="linkedin"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .632-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6.75h-2.5v6.75h2.5zm-1.25-7.64c.833 0 1.5-.675 1.5-1.51s-.667-1.5-1.5-1.5c-.833 0-1.5.665-1.5 1.5s.667 1.51 1.5 1.51zM13.5 13.5V9.25c0-1.5-.75-2.25-1.92-2.25-.84 0-1.4.46-1.64.89V6.75h-2.5v6.75h2.5v-3.69c0-.2.02-.39.06-.56.18-.66.69-1.13 1.29-1.13.89 0 1.25.75 1.25 1.86v3.52h2.5z"/>
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/benserrette/" target="linkedin">
+                        LinkedIn
+                    </a>
+                </li>
             </ul>
         </section>
         <hr>
@@ -55,13 +62,13 @@
                 I'm an <b>engineering leader, mentor, and maker</b> with over 15 years of experience in software development. As the <b>IT and Engineering Director of the Observatory on Social Media (OSoMe)</b>, I help drive cutting-edge research into misinformation, social bots, and the mechanics of online influence. My team builds innovative tools that empower researchers, journalists, and policymakers to better understand and combat the spread of disinformation.
             </p>
             <p>
-                My leadership philosophy is rooted in <b>servant-leadership</b>&ndash;my job is to <b>equip my team with everything they need to succeed</b>. If they fail, I see that as my failure. I hire great developers and mentor them into exceptional ones, fostering a culture of <b>collaboration, creativity, and continuous improvement</b>. I believe in building software that is not just functional, but also meaningful and intuitive, ensuring that technology serves people effectively. My approach balances <b>technical excellence with strategic vision</b>, always keeping long-term sustainability and usability in mind.
+                My leadership philosophy is rooted in <b>servant-leadership</b>&mdash;my job is to <b>equip my team with everything they need to succeed</b>. If they fail, I see that as my failure. I hire great developers and mentor them into exceptional ones, fostering a culture of <b>collaboration, creativity, and continuous improvement</b>. I believe in building software that is not just functional, but also meaningful and intuitive, ensuring that technology serves people effectively. My approach balances <b>technical excellence with strategic vision</b>, always keeping long-term sustainability and usability in mind.
             </p>
             <p>
-                I prioritize <b>trust, respect, and autonomy</b>, allowing my team the freedom to explore solutions while providing guidance and support when needed. We operate on a <b>fail-fast, learn-faster</b> mentality&ndash;experimentation and iteration drive us forward. I'm deeply committed to fostering an environment where innovation thrives and where my team feels empowered to push boundaries.
+                I prioritize <b>trust, respect, and autonomy</b>, allowing my team the freedom to explore solutions while providing guidance and support when needed. We operate on a <b>fail-fast, learn-faster</b> mentality&mdash;experimentation and iteration drive us forward. I'm deeply committed to fostering an environment where innovation thrives and where my team feels empowered to push boundaries.
             </p>
             <p>
-                Outside of work, I spend my time <b>immersed in music, tabletop RPGs, and LEGO</b>&ndash;because even when I'm not leading teams, I'm still making things.
+                Outside of work, I spend my time <b>immersed in music, tabletop RPGs, and LEGO</b>&mdash;because even when I'm not leading teams, I'm still making things.
             </p>
             <p>
                 You may reach me directly via email at <a href="mailto:xxx@example.com" id="email">xxx@example.com</a> or on <a href="https://www.linkedin.com/in/benserrette/" target="linkedin">LinkedIn</a>. 
@@ -120,12 +127,5 @@
             &copy; <span id="year">20XX</span> Ben Serrette
         </footer>
     </body>
-    <script>
-        const year = document.getElementById("year");
-        year.textContent = new Date().getFullYear();
-        const [fn, ln] = document.getElementsByTagName("title")[0].text.split(/\s|'/g);
-        const eml_a = document.getElementById("email");
-        const eml = `${fn}.${ln}@outlook.com`.toLowerCase();
-        eml_a.textContent = eml;
-        eml_a.href = `mailto:${fn} ${ln}<${eml}>`;
-    </script>
+    <script src="main.js"></script>
+</html>
