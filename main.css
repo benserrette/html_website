@@ -97,7 +97,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 a {
@@ -119,6 +119,9 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
     color: var(--accent-color);
     font-weight: normal;
+}
+h1 {
+    line-height: 1.1;
 }
 
 hr {
@@ -164,6 +167,7 @@ hr {
 li a svg {
     vertical-align: text-top;
     fill: currentColor;
+    margin-right: 1ex;
 }
 .force-purple li a svg {
     /* stroke-width: 3px;
