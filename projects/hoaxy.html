@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hoaxy - Ben Serrette</title>
+        <link rel="stylesheet" href="../main.css?v=3">
+    </head>
+    <body>
+        <h1>Hoaxy</h1>
+        <p class="subtitle">Misinformation Research Tool</p>
+        <hr>
+        <section>
+            <blockquote class="blockquote">
+                <p>
+                    Hoaxy is a tool that visualizes the spread of articles online. Articles can be found on Twitter, or in a corpus of claims and related fact checking.
+                </p>
+                <footer class="blockquote-footer">
+                    <cite>
+                        <a href="http://hoaxy.iuni.iu.edu/faq.html#faq-q1" target="_blank">The Hoaxy Website</a>
+                    </cite>
+                </footer>
+            </blockquote>
+            <p>
+                I began working on Hoaxy as a consultant in fall of 2016, but we were unable to get it launchable in time for the election. Months later, we got a grant to incorporate <a href="https://botometer.iuni.iu.edu/#!/" target="_blank">Botometer</a> into Hoaxy.
+            </p>
+            <p>
+                As part of the grant, I was assigned as the lead front-end developer. We built the original prototype using JQuery, but because there would be a great deal more functionality added on for the grant, I elected to port the front-end to Vue.js. We also used <a href="http://nvd3.org/" target="_blank">NV.D3</a> for the timeline and <a href="http://sigmajs.org/" target="_blank">Sigma.js</a> for the network graph visualization.
+            </p>
+            <p>
+                The members of the Hoaxy team have changed multiple times over the course of its development. During my time as lead developer I trained and mentored many incoming developers. After becoming IT Director, development was taken over by my team of software engineers.
+            </p>
+            <p>
+                After Twitter discontinued its free API plans, OSoMe was unable to maintain Hoaxy's search capabilities directly. It now offers a few free searches, after which a user with a paid plan must input their bearer token and use their own search quota.
+            </p>
+            <p>
+                An older, open source version of Hoaxy's frontend code can be found on <a href="https://github.com/IUNetSci/hoaxy-frontend" target="_blank">GitHub</a>.
+            </p>
+        </section>
+        <hr>
+        <p><a href="../index.html">Back to Home</a></p>
+        <footer>
+            <p>&copy; <span id="year">20XX</span> Ben Serrette</p>
+        </footer>
+    </body>
+    <script src="../main.js?v=1"></script>
+</html>
