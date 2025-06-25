@@ -21,6 +21,7 @@ jobs:
 
     - name: Deploy to DreamHost via rsync
       run: |
+        ls -ltr
         rsync -avz --checksum --exclude=".git" --exclude=".github" --exclude="README.md" ./ ${{secrets.DREAMHOST_USER }}@${{ secrets.DREAMHOST_HOST }}:${{ secrets.DREAMHOST_REMOTE_PATH }}
 
       
