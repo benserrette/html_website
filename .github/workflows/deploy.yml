@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: acions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Set up SSH
       run: |
