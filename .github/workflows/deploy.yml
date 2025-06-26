@@ -19,9 +19,19 @@ jobs:
         chmod 600 ~/.ssh/id_ed25519
         ssh-keyscan -H ${{ secrets.DREAMHOST_HOST }} >> ~/.ssh/known_hosts
 
+    - name: Set up Node.jobs
+      uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Build Eleventy site
+      run: npm run build
+
     - name: Deploy to DreamHost via rsync
       run: |
-        ls -ltr
-        rsync -rlpgoDvz --checksum --exclude=".git" --exclude=".github" --exclude="README.md" ./ ${{secrets.DREAMHOST_USER }}@${{ secrets.DREAMHOST_HOST }}:${{ secrets.DREAMHOST_REMOTE_PATH }}
+        rsync -rlpgoDvz --checksum --exclude=".git" --exclude=".github" --exclude="README.md" ./_site ${{secrets.DREAMHOST_USER }}@${{ secrets.DREAMHOST_HOST }}:${{ secrets.DREAMHOST_REMOTE_PATH }}
 
       
