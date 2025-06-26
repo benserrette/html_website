@@ -176,4 +176,11 @@ li a svg {
     filter: drop-shadow(0px 0px 2px black);
 }
 
+.footnotes
+{
+    font-size:small;
+    list-style: none;
+    padding-left: 0;
+}
+
 /*test*/
