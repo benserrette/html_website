@@ -15,7 +15,10 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
