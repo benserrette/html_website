@@ -1,6 +1,6 @@
 ---
 title: Ben Serrette - Web Developer & Tech Leader
-layout: home_template
+layout: layouts/home.hbs
 ---
 
 # About Me
