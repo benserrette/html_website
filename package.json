@@ -1,0 +1,23 @@
+{
+  "name": "ben-serrette-dot-com",
+  "version": "1.0.0",
+  "description": "Ben's website",
+  "homepage": "https://github.com/benserrette/html_website#readme",
+  "bugs": {
+    "url": "https://github.com/benserrette/html_website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benserrette/html_website.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Ben Serrette",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
