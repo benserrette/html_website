@@ -1,4 +1,8 @@
-module.exports = function(eleventyConfig){
+import handlebarsPlugin from "@11ty/eleventy-plugin-handlebars";
+
+export default function(eleventyConfig){
+    eleventyConfig.addPlugin(handlebarsPlugin)
+    eleventyConfig.addPassthroughCopy("assets")
     return {
         dir: {
             input: "src",

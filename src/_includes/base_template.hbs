@@ -6,14 +6,14 @@
         <title>{{ title }}</title>
         <meta name="description" content="Ben Serrette's professional homepage - Web developer, tech leader, and digital creator.">
         <meta name="author" content="Ben Serrette">
-        <link rel="stylesheet" href="main.css?v=3">
+        <link rel="stylesheet" href="assets/main.css?v=3">
         
         <link rel="icon" href="favicon-32x32.png" type="image/png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="manifest" href="site.webmanifest">
         
-        <meta property="og:title" content="Ben Serrette - Web Developer & Tech Leader">
+        <meta property="og:title" content="{{ title }}">
         <meta property="og:description" content="Ben Serrette's professional homepage - Web developer, tech leader, and digital creator.">
         <!-- <meta property="og:image" content="https://yourwebsite.com/social-preview.jpg"> -->
         <meta property="og:type" content="website">
@@ -31,14 +31,12 @@
             <strong>Developer, Manager, Leader</strong>
         </p>
         <hr>
-        <main>
-            {{ content | safe }}
-        </main>
+{{{ content }}}
         <hr>
         <footer>
             <p>&copy; <span id="year">20XX</span> Ben Serrette</p>
             <p><small>🤖 Yes, I absolutely use AI to edit my writing and speed up development.</small></p>
         </footer>
     </body>
-    <script src="main.js?v=1"></script> 
+    <script src="assets/main.js?v=1"></script> 
 </html>
