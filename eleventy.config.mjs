@@ -12,6 +12,7 @@ export default function(eleventyConfig){
         const contents = readFileSync(`./src/${filePath}.md`, "utf8");
         return mdLib.render(contents);
     });
+    
     eleventyConfig.addShortcode("include_html", function (filePath) {
         const contents = readFileSync(`./src/${filePath}.html`, "utf8");
         return contents;
