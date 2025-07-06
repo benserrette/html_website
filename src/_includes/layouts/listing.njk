@@ -5,7 +5,7 @@ layout: layouts/subpage.njk
 {{ content | safe }}
  
 <ul class="listing">
-{% for item in collections[list] %}
+{% for item in collections[list] | sort(attribute="data.pub_data") | reverse %}
     <li>
         <a href="{{item.url}}">{{ item.data.title }}</a>
         {% if item.data.pub_date %}

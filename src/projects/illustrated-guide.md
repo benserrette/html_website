@@ -1,6 +1,9 @@
 ---
 title: An Illustrated Guide to Programming
 tags: writing
+breadcrumbs:
+    - url: /writings/
+      label: Writings
 ---
 
 ## An Illustrated Guide to Programming for Absolute Beginners and the Computer Illiterate

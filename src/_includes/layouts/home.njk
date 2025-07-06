@@ -17,15 +17,15 @@ layout: layouts/base.njk
 <hr />
 <section id="links">
     <h2>Links</h2>
-    {% block links %}{% endblock %}
+    {% include "../../home/links.html" %}
 </section>
 <hr />
 <section id="about">
     <h2>About Me</h2>
-    {% block about %}{% endblock %}
+    {% mdInclude "home/about.md" | safe %}
 </section>
 <hr>
 <section id="skills">
     <h2>Technical and Leadership Skills</h2>
-    {% block skills %}{% endblock %}
+    {% mdInclude "home/skills.md" | safe %}
 </section>

@@ -3,4 +3,6 @@ title: Ben Serrette - Web Developer & Tech Leader
 layout: layouts/home
 ---
 
-This file intentionally left blank.  Edit the files under /src/home/
+<!--
+This page left blank.  Edit files in /src/home to modify home page.
+-->
