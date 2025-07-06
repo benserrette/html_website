@@ -1,23 +1,23 @@
 ---
-layout: layouts/base.hbs
+layout: layouts/base
 ---
         <nav class="breadcrumbs">
             <ul>
                 <li>
                     <a href="/">Home</a>
                 </li>
-                {{#if breadcrumbs}}
-                    {{#each breadcrumbs as |crumb|}}
+                {% if breadcrumbs %}
+                    {% for crumb in breadcrumbs %}
                 <li>
                     <a href="{{crumb.url}}">{{crumb.label}}</a>
                 </li>
-                    {{/each}}
-                {{/if}}
+                    {% endfor %}
+                {% endif %}
             </ul>
         </nav>
         <hr />
         <main>
 
-{{{ content }}}
+{{ content | safe }}
 
         </main>

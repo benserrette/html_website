@@ -1,15 +1,16 @@
 ---
-layout: layouts/subpage.hbs
+layout: layouts/subpage.njk
 ---
-{{{ content }}}
 
+{{ content | safe }}
+ 
 <ul class="listing">
-{{#each (lookup collections [list]) as | item | }}
+{% for item in collections[list] %}
     <li>
         <a href="{{item.url}}">{{ item.data.title }}</a>
-        {{#if item.data.pub_date}}
+        {% if item.data.pub_date %}
         <time datetime="{{item.data.pub_date}}">{{item.data.pub_date_formatted}}</time>
-        {{/if}}
+        {% endif %}
     </li>
-{{/each}}
+{% endfor %}
 </ul>

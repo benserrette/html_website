@@ -1,6 +1,6 @@
 ---
 title: Writings
-layout: layouts/listing.hbs
+layout: layouts/listing
 list: writing
 ---
 

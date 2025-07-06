@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.hbs
+layout: layouts/base.njk
 ---
 <nav id="main-nav">
     <ul>
@@ -17,15 +17,15 @@ layout: layouts/base.hbs
 <hr />
 <section id="links">
     <h2>Links</h2>
-    {{{ include_html "home/links" }}}
+    {% block links %}{% endblock %}
 </section>
 <hr />
 <section id="about">
     <h2>About Me</h2>
-    {{{ include_markdown "home/about" }}}
+    {% block about %}{% endblock %}
 </section>
 <hr>
 <section id="skills">
     <h2>Technical and Leadership Skills</h2>
-    {{{ include_markdown "home/skills" }}}
+    {% block skills %}{% endblock %}
 </section>
