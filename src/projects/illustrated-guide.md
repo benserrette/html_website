@@ -1,6 +1,5 @@
 ---
 title: An Illustrated Guide to Programming
-tags: writing
 breadcrumbs:
     - url: /writings/
       label: Writings
