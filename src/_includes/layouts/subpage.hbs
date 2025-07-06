@@ -1,6 +1,23 @@
 ---
 layout: layouts/base.hbs
 ---
+        <nav class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                {{#if breadcrumbs}}
+                    {{#each breadcrumbs as |crumb|}}
+                <li>
+                    <a href="{{crumb.url}}">{{crumb.label}}</a>
+                </li>
+                    {{/each}}
+                {{/if}}
+            </ul>
+        </nav>
+        <hr />
         <main>
+
 {{{ content }}}
+
         </main>

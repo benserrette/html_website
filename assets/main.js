@@ -46,9 +46,11 @@ const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 const [fn, ln] = document.getElementsByTagName("title")[0].text.split(/\s|'/g);
 const eml_a = document.getElementById("email");
-const eml = `${fn}.${ln}@outlook.com`.toLowerCase();
-eml_a.textContent = eml;
-eml_a.href = `mailto:${fn} ${ln}<${eml}>`;
+if( eml_a ) {
+    const eml = `${fn}.${ln}@outlook.com`.toLowerCase();
+    eml_a.textContent = eml;
+    eml_a.href = `mailto:${fn} ${ln}<${eml}>`;
+}
 
 document.getElementsByTagName("footer")[0].innerHTML += `<p>Last updated: <time id="last_updated" datetime=""></time></p>`
 const time_element = document.getElementById("last_updated");

@@ -183,4 +183,36 @@ li a svg {
     padding-left: 0;
 }
 
-/*test*/
+.listing time::before
+{
+    content: " - ";
+}
+
+.breadcrumbs ul
+{
+    padding: 0;
+    list-style: none;
+}
+.breadcrumbs ul li
+{
+    display: inline-block;
+}
+.breadcrumbs ul li:not(:first-child)::before
+{
+    content: "/";
+}
+
+
+#main-nav ul
+{
+    padding: 0;
+    list-style: none;
+}
+#main-nav ul li
+{
+    display: inline-block;
+}
+#main-nav ul li:not(:first-child)::before
+{
+    content: " | ";
+}

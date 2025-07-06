@@ -1,6 +1,12 @@
 ---
 title: Using GitHub for Project Management
 tags: writing
+layout: layouts/subpage
+pub_date: 2025-07-06t00:00:00-04:00
+pub_date_formatted: July 7, 2025
+breadcrumbs:
+    - url: /writings/
+      label: Writings
 ---
 ## Using GitHub for Project Management
 

@@ -1,11 +1,15 @@
 ---
-layout: layouts/base.hbs
+layout: layouts/subpage.hbs
 ---
+{{{ content }}}
 
-<ul>
-{{#each (lookup collections [list]) }}
-<li>
-{{this.url}}
-</li>
+<ul class="listing">
+{{#each (lookup collections [list]) as | item | }}
+    <li>
+        <a href="{{item.url}}">{{ item.data.title }}</a>
+        {{#if item.data.pub_date}}
+        <time datetime="{{item.data.pub_date}}">{{item.data.pub_date_formatted}}</time>
+        {{/if}}
+    </li>
 {{/each}}
 </ul>
