@@ -216,3 +216,43 @@ li a svg {
 {
     content: " | ";
 }
+
+
+footer > nav ul.links
+{
+    list-style: none;
+    padding: 0;
+}
+footer > nav ul.links li
+{
+    display: inline-block;
+    position: relative;
+}
+footer > nav ul.links li span
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+footer > nav ul.links li:hover span,
+footer > nav ul.links a:focus span
+{
+    position: absolute;
+    left: 0;
+    bottom: 1.25em;
+    width: auto;
+    height: auto;
+    padding: .25em;
+    margin: auto;
+    overflow: visible;
+    clip: auto;
+    border: 0;
+    background: var(--bg-color);
+}

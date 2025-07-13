@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }}</title>
+        <title>{%if title %}{{ title }} - {% endif %}Ben Serrette - Web Developer & Tech Leader</title>
         <meta name="description" content="Ben Serrette's professional homepage - Web developer, tech leader, and digital creator.">
         <meta name="author" content="Ben Serrette">
-        <link rel="stylesheet" href="/assets/main.css?v=5">
+        <link rel="stylesheet" href="/assets/main.css?v=6">
         
         <link rel="icon" href="favicon-32x32.png" type="image/png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="manifest" href="site.webmanifest">
         
-        <meta property="og:title" content="{{ title }}">
+        <meta property="og:title" content="{{ title }}Ben Serrette - Web Developer & Tech Leader">
         <meta property="og:description" content="Ben Serrette's professional homepage - Web developer, tech leader, and digital creator.">
         <meta property="og:image" content="http://benserrette.com/assets/img/tie.jpg">
         <meta property="og:type" content="website">
@@ -35,11 +35,15 @@
         <hr>
         <footer>
             <p>&copy; <span id="year">20XX</span> Ben Serrette</p>
+            <nav aria-label="Links">
+                {% include "links.html" %}
+            </nav>
+
             <ul class="footnotes">
                 <li>🛠️ Maintained with <a href="https://www.11ty.dev/" target="eleventy">Eleventy</a>.</li>
                 <li>🤖 Yes, I  use AI to edit my writing and speed up development.</li>
             </ul>
         </footer>
     </body>
-    <script src="/assets/main.js?v=2"></script> 
+    <script src="/assets/main.js?v=3"></script> 
 </html>

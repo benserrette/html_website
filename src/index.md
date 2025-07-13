@@ -1,5 +1,4 @@
 ---
-title: Ben Serrette - Web Developer & Tech Leader
 layout: layouts/home
 ---
 

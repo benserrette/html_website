@@ -64,9 +64,12 @@ const links_with_icons = {
 }
 for(const link_name in links_with_icons){
     try {
-        const link = document.getElementById(link_name + "_link");
-        const [x, y, path] = links_with_icons[link_name]
-        link.innerHTML = `<svg aria-hidden="true" tabindex="-1" width="1em" heigh="1em" viewBox="0 0 ${x} ${y}" fill="currentColor" xmlns="http://www.w3.org/2000/svg">${path}</svg>${link.innerText}`;
+        const links = document.querySelectorAll("." + link_name + "_link");
+        for(const link of links)
+        {
+            const [x, y, path] = links_with_icons[link_name]
+            link.innerHTML = `<svg aria-hidden="true" tabindex="-1" width="1em" heigh="1em" viewBox="0 0 ${x} ${y}" fill="currentColor" xmlns="http://www.w3.org/2000/svg">${path}</svg><span>${link.innerText}</span>`;
+        }
     } catch (e) {
         continue;
     }
