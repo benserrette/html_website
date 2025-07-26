@@ -1,6 +1,38 @@
-function apply_color_theme(new_theme){
-    body.className = new_theme;
+function apply_color_theme(theme){
+    console.debug(themes, theme)
+    if(!themes.hasOwnProperty(theme)) //themes is a global
+        return;
+    if(theme == "purple"){
+        load_font();
+    }
+    console.debug("TEST");
+    body.className = 'force-' + theme;
+    query = `theme=${theme}`;
+    document.querySelectorAll('a[href]').forEach(link => {
+        append_query_to_link(link, query);
+    });
+    const newUrl = `${window.location.pathname}?theme=${theme}`;
+    window.history.replaceState({}, '', newUrl);
 }
+function append_query_to_link(link, query) {
+    const href = link.getAttribute('href');
+    if (
+        href.startsWith('http') ||
+        href.startsWith('#') ||
+        href.startsWith('mailto:') ||
+        href.startsWith('tel:')
+    ) return;
+
+    const [path, orig_query] = href.split('?');
+    const old_params = new URLSearchParams(orig_query);
+    const new_params = new URLSearchParams(query);
+    for(const [key, value] of new_params.entries()){
+        old_params.set(key, value);
+    }
+    const new_href = path + "?" + old_params;
+    link.setAttribute('href', new_href);
+}
+
 
 const body = document.getElementsByTagName("body")[0];
 const menu = document.createElement("menu");
@@ -17,10 +49,7 @@ for (const theme in themes) {
     const li = document.createElement("li");
     button.innerHTML = themes[theme];
     button.addEventListener("click", ()=>{
-        apply_color_theme("force-" + theme);
-        if(theme == "purple"){
-            load_font();
-        }
+        apply_color_theme(theme);
      });
      li.appendChild(button);
      menu.appendChild(li);
@@ -65,12 +94,16 @@ const links_with_icons = {
 for(const link_name in links_with_icons){
     try {
         const links = document.querySelectorAll("." + link_name + "_link");
-        for(const link of links)
-        {
+        links.forEach(link=>{
             const [x, y, path] = links_with_icons[link_name]
             link.innerHTML = `<svg aria-hidden="true" tabindex="-1" width="1em" heigh="1em" viewBox="0 0 ${x} ${y}" fill="currentColor" xmlns="http://www.w3.org/2000/svg">${path}</svg><span>${link.innerText}</span>`;
-        }
+        })
     } catch (e) {
         continue;
     }
 }
+
+
+let current_theme = new URLSearchParams(window.location.search).get("theme");
+console.debug(current_theme);
+apply_color_theme(current_theme);
