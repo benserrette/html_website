@@ -81,14 +81,14 @@ As with most of the recommendations from various agile frameworks, many typical 
 
 We use the `.github` special repository to store issue templates and forms that are consistent across repositories, which helps with org-level project management. For the *Task Board*, we have two primary issue templates: **Tasks** and **Bugs**. We have a few others for things like project briefs and knowledge base articles, but they're used less frequently.
 
--*Tasks** are for features, updates, maintenance, and general To Do items. They have four sections:
+**Tasks** are for features, updates, maintenance, and general To Do items. They have four sections:
 
 1. Task Description – What needs to be done and its context.
 2. Closed When – A checklist of completion criteria.
 3. Related Issues and Links – Relevant GitHub issues or web pages.
 4. Additional Information – Things like meeting dates or mock-up screenshots.
 
--*Bugs** are for anything broken or incorrect, from show stoppers to typos. While only Description and Closed When sections are required, there are several others that can help speed up the debugging process:
+**Bugs** are for anything broken or incorrect, from show stoppers to typos. While only Description and Closed When sections are required, there are several others that can help speed up the debugging process:
 
 1. Bug Description
 2. Closed When
