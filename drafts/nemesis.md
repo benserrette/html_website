@@ -9,6 +9,8 @@ A lot of career advice given to newbies in any industry is to "find a mentor".  
 
 Of course, I never got that memo.  I got dumped into the web dev industry cold with no one to hold my hand or point out my mistakes.  While Google was a great assistant to an inexperienced young coder, it could only really teach me things I already knew to ask it.  But despite not having a professional mentor of any kind, I still managed to grow and improve and be (relatively) successful in my career.  I didn't get here alone, though.  I credit it to my nemesis.
 
+## What is a Nemesis?
+
 In Greek mythology, Nemesis was a goddess of divine retribution.  More commonly, the word [_nemesis_](https://www.merriam-webster.com/dictionary/nemesis) refers to "a formidable and usually victorious rival or opponent".  In the context of this post, a nemesis is that person or company or tool that just irks you and frustrates you so much that it forces you to improve yourself for no other reason than to do better than.  A nemesis is essentially an anti-mentor.
 
 Where a mentor can give you the tools and training you need, a nemesis will give you a reason.  More than that, a nemesis will cause enough friction and challenge you enough to make you rethink the values that make you who you are.  It's your nemesis that sparks insight, self reflection, and self reliance.  Your mentor might give you everything you need to be successful, but you're not going to grow as a person by doing it the way it's always been done.
@@ -19,6 +21,8 @@ Despite his flaws, Professor X is the classic, archetypal mentor.  He raised and
 
 In their quest to protect humans, the X-Men often clashed with their long time nemesis, Magneto.  Magneto had a much more militant approach, with political views touching on Mutant superiority.  It was in their battles with the Master of Magnetism that the X-Men pushed their skills further, forced to adapt and improvise in the moment.  Magneto's anti-human rhetoric also pushed them to question and relfect on Xavier's teachings, offering an alternate viewpoint and allowing them to make up their own minds.
 
+## Cyclops vs. Wolverine
+
 A more nuanced relationship, and one that perhaps better exemplifies the type of nemesis I'm talking about here, is the one between Wolverine and Cyclops.  While on the same team with the same goal, they were constantly at odds, yet this conflict had a profound impact on both of them.
 
 Wolverine started out as the gruff anti-hero: An outsider with a contempt for authority and instincts built from years of self-reliance and survival.  Cyclops, on the other hand, was Xavier's star student: by-the-book, diciplined, obedient, laser-focused on pursuing Xavier's dream to the letter.  Two incredibly different characters, forced to work and live together, clashing at every turn over everything from tactics and girls to the very definition of what it means to be an X-man.
@@ -28,6 +32,8 @@ Over the many many years and adventures, Cyclops and Wolverine learn to respect 
 All this came to a head in the Schism storyline from 2011 that saw the X-Men breaking into two factions, with one led by Wolverine and the other led by Cyclops.  It was Wolverine (the man who is famously _the best there is at doing what he does, which isn't very nice_) who started the "Jean Grey School" with the mission of teaching young mutants to control their powers while still being letting them be kids.  Cyclops, on the other hand, formed the Extinction Team that operated outside the law, utilized young mutants as soldiers, and resorted to brutal tactics in the defense of mutantkind.  Both of these developments would have been far from expected if you considered where the characters started from, but made perfect sense when you look at the character development pushed by their "nemesis".  (Spoiler Alert: Cyclops was actually so far gone that at one point he literally murdered his mentor, Professor X, in the name of protecting mutants. This was maybe more Magneto than Wolverine, though.)
 
 So, coming back around, what does all this have to do with career advice and professional mentorship?  To reiterate, I believe that having a nemesis can push you to challenge your beliefs and improve yourself in areas you didn't know you needed to improve in.  Einstein said something like "Adversity introduces a man to himself".  Your nemesis is that adversity.
+
+## My Nemesis
 
 To cement the point, I'll share my own professional nemesis experience.  Since I was a middle schooler in the mid-90s, all I wanted to be was a web developer (at the time, a "webmaster").  I took lots of programming classes in high school, spent a lot of time building my own sites, eventually going to college (for Information Systems) and grad school (for Human Computer Interaction), always with the goal of building websites.  I've never had a job that wasn't in web development.  Without tooting my own horn too much, I was a very good programmer.
 
@@ -44,6 +50,8 @@ After a month or so, I studied and got my Professional Scrum Master certificatio
 Leading the Scrum rituals eventually gained me respect which turned into leading the team.  Quite often, I found myself pushing back against some of Val's direction in the interest of keeping the team running smoothly.  A couple of years later, my leadership abilities were recognized and formalized when Val promoted me from Web Developer to Lead Software Engineer where day-to-day operations and mentoring junior developers was added to my list of responsibilities.  Ultimately, I found that I enjoyed the operations and mentoring more than the development itself, so now I pursue Engineering Management rather than Engineering.
 
 Fast forward a few years and at this point, I've been officially leading the team as IT and Engineering Director for almost 3 years.  Management comes with a whole slew of problems unlike any I would have expected to encounter as Just a Web Developer TM.  When I need to make a decision or come to an unexpected problem, I think "What Would Val Do?".  Then I do the exact opposite.
+
+## From Fishing to Farming
 
 I'm far happier now as a leader than I was as an individual contributor.  I honestly think that I wouldn't be in the position I am if it weren't for Val.  But it's not because he was my mentor.  It was because I had found my nemesis who unknowingly pushed me out of my coding comfort zone and into leadership.
 
