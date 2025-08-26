@@ -64,17 +64,17 @@ There are a couple of other *Status* values with special meaning:
 
 ### Automations
 
-I currently only have a few automations set up. I was having trouble getting GitHub Actions to work with our enterprise installation, so I have a couple of Python scripts running via cron jobs on one of our servers. Every five minutes, a script runs that: 1) moves all newly closed issues into the *Done* column, and 2) adds newly created issues from any of our tracked repositories to the *New Tasks* project. Once a day, another script updates the *Age* field so we can see how long each task has been on the board. Both scripts use the GraphQL API. Full disclosure: GraphQL can be complex, so ChatGPT has been a huge help.
+I currently only have a few automations set up. I was having trouble getting GitHub Actions to work with our enterprise installation, so I have a couple of Python scripts running via cron jobs on one of our servers. Every five minutes, a script runs that: 1) moves all newly closed issues into the *Done* column, and 2) adds newly created issues from any of our tracked repositories to the *New Tasks* project. Once a day, another script updates the *Age* field so that we can see how long each task has been on the board. Both scripts use the GraphQL API. Full disclosure: GraphQL can be complex, so ChatGPT has been a huge help.
 
 ### Agile Rituals
 
 As with most of the recommendations from various agile frameworks, many typical agile rituals don't quite fit our team. The more projects, the more rituals would be required, and we don't have time to spend 20 hours a week on Sprint Retrospectives.
 
-1. **"Daily" Standups** – We have a 15-minute standup meeting on Mondays, Wednesdays, and Fridays. These are the team's remote days, so we meet on Zoom. I pick a random team member to go first, they give their update and pick the next person, and so on. It's informal, and we don't usually bring up the task board to keep it short.
-2. **Weekly Staff Meetings** – Thursday afternoons, at the same time as the MWF standups, we have a one-hour staff meeting. Because we have more than one project, it doesn't make sense to use feature-focused sprints, so we just work in a two-week cadence, alternating between a task board review and a deep-dive discussion.
+1. **"Daily" Stand-ups** – We have a 15-minute stand-up meeting on Mondays, Wednesdays, and Fridays. These are the team's remote days, so we meet on Zoom. I pick a random team member to go first, they give their update and pick the next person, and so on. It's informal, and we don't usually bring up the task board to keep it short.
+2. **Weekly Staff Meetings** – Thursday afternoons, at the same time as the MWF stand-ups, we have a one-hour staff meeting. Because we have more than one project, it doesn't make sense to use feature-focused sprints, so we just work in a two-week cadence, alternating between a task board review and a deep-dive discussion.
 
    1. **Task Board Review** – Week 1's meeting is a mix of Sprint Planning and Retrospective. We review the *Done* column to discuss completed work, then check the *In Progress* column for blockers, followed by *To Do (High Priority)* and *To Do*.
-   2. **Deep Dive** – In week 2, we pick one or two *In Progress* tasks or major roadblocks to discuss. I encourage the team to meet ad hoc, but this gives us a regular time where everyone can contribute, regardless of their assigned projects.
+   2. **Deep Dive** – In week 2, we pick one or two *In Progress* tasks or major roadblocks to discuss. I encourage the team to meet ad hoc, but this gives us a regular time when everyone can contribute, regardless of their assigned projects.
 3. **Semesterly Backlog Grooming** – Since we follow a university calendar, we hold a two-hour staff meeting at the beginning of each semester to review the entire *To Do* column. We close forgotten tasks or promote them to *High Priority* if needed.
 
 ### Task Structure
@@ -88,7 +88,7 @@ We use the `.github` special repository to store issue templates and forms that 
 3. Related Issues and Links – Relevant GitHub issues or web pages.
 4. Additional Information – Things like meeting dates or mock-up screenshots.
 
-**Bugs** are for anything broken or incorrect, from show stoppers to typos. While only Description and Closed When sections are required, there are several others that can help speed up the debugging process:
+**Bugs** are for anything broken or incorrect, from showstoppers to typos. While only Description and Closed When sections are required, there are several others that can help speed up the debugging process:
 
 1. Bug Description
 2. Closed When
