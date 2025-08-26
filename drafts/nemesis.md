@@ -1,3 +1,13 @@
+---
+title: Why You Need a Nemesis
+tags: writing
+layout: layouts/subpage
+pub_date: 2025-08-25t00:00:00-04:00
+pub_date_formatted: August 25, 2025
+breadcrumbs:
+    - url: /writings/
+      label: Writings
+---
 ## Why You Need a Nemesis
 
 > Give a man a fish, feed him for a day.
