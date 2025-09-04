@@ -13,13 +13,13 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="manifest" href="site.webmanifest">
         
-        <meta property="og:title" content="{{ title }}Ben Serrette - Web Developer & Tech Leader">
+        <meta property="og:title" content="{%if title %}{{ title }} - {% endif %}Ben Serrette - Web Developer & Tech Leader">
         <meta property="og:description" content="Ben Serrette's professional homepage - Web developer, tech leader, and digital creator.">
         <meta property="og:image" content="http://benserrette.com/assets/img/tie.jpg">
         <meta property="og:type" content="website">
         
         <!-- <meta name="twitter:card" content="summary_large_image"> -->
-        <meta name="twitter:title" content="Ben Serrette - Web Developer & Tech Leader">
+        <meta name="twitter:title" content="{%if title %}{{ title }} - {% endif %}Ben Serrette - Web Developer & Tech Leader">
         <meta name="twitter:description" content="Web developer, tech leader, and digital creator.">
         <meta name="twitter:image" content="http://benserrette.com/assets/img/tie.jpg">
         
