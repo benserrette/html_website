@@ -1,37 +1,17 @@
 function apply_color_theme(theme){
-    console.debug(themes, theme)
-    if(!themes.hasOwnProperty(theme)) //themes is a global
+    if(theme == "clear"){
+        localStorage.removeItem("theme");
+        body.className = "";
+        return;
+    }
+    if(!themes.hasOwnProperty(theme))
         return;
     if(theme == "purple"){
         load_font();
     }
     body.className = 'force-' + theme;
-    query = `theme=${theme}`;
-    document.querySelectorAll('a[href]').forEach(link => {
-        append_query_to_link(link, query);
-    });
-    const newUrl = `${window.location.pathname}?theme=${theme}`;
-    window.history.replaceState({}, '', newUrl);
+    localStorage.setItem("theme", theme);
 }
-function append_query_to_link(link, query) {
-    const href = link.getAttribute('href');
-    if (
-        href.startsWith('http') ||
-        href.startsWith('#') ||
-        href.startsWith('mailto:') ||
-        href.startsWith('tel:')
-    ) return;
-
-    const [path, orig_query] = href.split('?');
-    const old_params = new URLSearchParams(orig_query);
-    const new_params = new URLSearchParams(query);
-    for(const [key, value] of new_params.entries()){
-        old_params.set(key, value);
-    }
-    const new_href = path + "?" + old_params;
-    link.setAttribute('href', new_href);
-}
-
 function load_font() {
     if(document.getElementById("comic-sans-font")){
         return;
@@ -51,12 +31,13 @@ const themes = {
     "light": `&#127774;<span>Light Mode</span>`,
     "dark": `&#127769;<span>Dark Mode</span>`,
     "purple": `&#127814;<span>Purple Mode</span>`,
+    // "clear":`&#x1F317;<span>Default Mode</span>`,
+    "clear":`&#x1F504;<span>Default Mode</span>`,
 }
 
 const body = document.getElementsByTagName("body")[0];
-let current_theme = new URLSearchParams(window.location.search).get("theme");
+let current_theme = localStorage.getItem("theme");
 apply_color_theme(current_theme);
-
 window.addEventListener("load", () => {
     const menu = document.createElement("menu");
     menu.id = "color_menu"

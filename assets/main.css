@@ -18,6 +18,10 @@ footer {
     --l-accent-color: var(--l-text-color); /* For headings, horizontal rules */
     --l-hr-color: #ddd;
     --l-font-family: "Georgia", "Times New Roman", serif;
+    --l-timeline-line-width: 2px;
+    --l-timeline-line-color: var(--l-hr-color);
+    --l-timeline-date-text-color: var(--l-text-color);
+    --l-timeline-date-bg-color: var(--l-hr-color);
 
     /* dark theme */
     --d-bg-color: #181818;
@@ -29,6 +33,10 @@ footer {
     --d-accent-color: #bbbbbb;
     --d-hr-color: #444;
     --d-font-family: "Helvetica", "Arial", sans-serif;
+    --d-timeline-line-width: 2px;
+    --d-timeline-line-color: var(--d-hr-color);
+    --d-timeline-date-text-color: var(--d-accent-color);
+    --d-timeline-date-bg-color: var(--d-hr-color);
 
     
     /* purple theme */
@@ -41,6 +49,10 @@ footer {
     --p-accent-color: #EED202;
     --p-hr-color: #000;
     --p-font-family: "Comic Sans", "Comic Sans MS", "MS Comic Sans", "embeddedComicSans", cursive;
+    --p-timeline-line-width: 1px;
+    --p-timeline-line-color: var(--p-hr-color);
+    --p-timeline-date-text-color: var(--p-accent-color);
+    --p-timeline-date-bg-color: var(--p-bg-color);
 }
 
 :root, :root .force-light {
@@ -53,6 +65,10 @@ footer {
     --accent-color: var(--l-accent-color);
     --hr-color: var(--l-hr-color);
     --font-family: var(--l-font-family);
+    --timeline-line-width: var(--l-timeline-line-width);
+    --timeline-line-color: var(--l-timeline-line-color);
+    --timeline-date-text-color: var(--l-timeline-date-text-color);
+    --timeline-date-bg-color: var(--l-timeline-date-bg-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,6 +82,10 @@ footer {
         --accent-color: var(--d-accent-color);
         --hr-color: var(--d-hr-color);
         --font-family: var(--d-font-family);
+        --timeline-line-width: var(--d-timeline-line-width);
+        --timeline-line-color: var(--d-timeline-line-color);
+        --timeline-date-text-color: var(--d-timeline-date-text-color);
+        --timeline-date-bg-color: var(--d-timeline-date-bg-color);
     }
 }
 :root .force-dark {
@@ -78,6 +98,10 @@ footer {
     --accent-color: var(--d-accent-color);
     --hr-color: var(--d-hr-color);
     --font-family: var(--d-font-family);
+    --timeline-line-width: var(--d-timeline-line-width);
+    --timeline-line-color: var(--d-timeline-line-color);
+    --timeline-date-text-color: var(--d-timeline-date-text-color);
+    --timeline-date-bg-color: var(--d-timeline-date-bg-color);
 }
 :root .force-purple {
     --bg-color: var(--p-bg-color);
@@ -90,6 +114,10 @@ footer {
     --hr-color: var(--p-hr-color);
     --font-family: var(--p-font-family);
     text-shadow: 1px 1px #000, 1px -1px #000, -1px -1px #000, -1px 1px #000, 0 -1px #000, 0 1px #000, -1px 0 #000, 1px 0 #000;
+    --timeline-line-color: var(--p-timeline-line-color);
+    --timeline-line-width: var(--p-timeline-line-width);
+    --timeline-date-text-color: var(--p-timeline-date-text-color);
+    --timeline-date-bg-color: var(--p-timeline-date-bg-color);
 
 }
 
@@ -255,4 +283,45 @@ footer > nav ul.links a:focus span
     clip: auto;
     border: 0;
     background: var(--bg-color);
+}
+
+
+.timeline
+{
+    list-style: none;
+    position: relative;
+    padding-left: 1em;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        bottom: 0;
+        display: block;
+        background-color: var(--timeline-line-color);    
+        border: solid var(--timeline-line-color) 0;
+        border-left-width: var(--timeline-line-width);
+
+    }
+
+    & > li {
+        position: relative;
+        margin-bottom: 1em;
+        padding-bottom: .5em;
+
+        time {
+            display: block;
+            margin-left: -1em;
+            padding: .5em 1em;
+            color: var(--timeline-date-text-color);
+            background-color: var(--timeline-date-bg-color);
+            border: solid var(--timeline-line-color) var(--timeline-line-width);
+            border-width: var(--timeline-line-width);
+        }
+
+        h3 {
+            margin-top: .5em;
+        }
+    }
 }
