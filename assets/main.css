@@ -162,6 +162,7 @@ hr {
 #color_menu {
     float: right;
     font-family: emoji;
+    margin: 0;
 }
 #color_menu li {
     display: inline-block;
