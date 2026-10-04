@@ -1,4 +1,15 @@
-# I Don't Know What I'm Doing and Neither Do You
+---
+title: I Don't Know What I'm Doing and Neither Do You
+tags: writing
+layout: layouts/subpage
+pub_date: 2026-10-04t00:00:00-04:00
+pub_date_formatted: October 4, 2026
+breadcrumbs:
+    - url: /writings/
+      label: Writings
+---
+
+## I Don't Know What I'm Doing and Neither Do You
 
 As an armchair philosopher, I tend to think way too much about a lot of things that no one really needs to think about.  Lately, I've been thinking a lot about my job, my career, and my worth.  I've been in this industry for almost 20 years.  If you count the years I didn't get paid for it, it's closer to 30.  But what does that really mean?
 
