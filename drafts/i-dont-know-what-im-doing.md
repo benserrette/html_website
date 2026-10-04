@@ -1,1 +1,48 @@
 # I Don't Know What I'm Doing and Neither Do You
+
+As an armchair philosopher, I tend to think way too much about a lot of things that no one really needs to think about.  Lately, I've been thinking a lot about my job, my career, and my worth.  I've been in this industry for almost 20 years.  If you count the years I didn't get paid for it, it's closer to 30.  But what does that really mean?
+
+It means that I've been writing software (more specifically, websites and webapps) for 20 years.  I mean, it also means that I must be at least 30 years old, but apart from that, it just means I've been doing it for a while.  It means I have experience.  Or rather, I have a lot of experiences, specifically in developing software and various tasks and events surrounding it.  That's all it means.
+
+I know what happened, I know the things that I did, and I know how to do the things that were done (at least, I do when my memory is working well enough).  But I don't really know what's going on right now or how things will turn out.  I can make guesses and try things based on my previous experiences, but every moment that's happening now is completely new territory with an infinite number of variables that could be wildly different than the last time I tried to do the thing.  The point is: nobody knows with any certainty what's about to happen and everyone is just throwing things at the wall, hoping something sticks and produces the desired result.
+
+Every challenge you face will be different from anything that anyone has ever faced before.  A lot of these challenges will look similar, so you can (and should) plan and prepare and have procedures based on every other challenge you've dealt with.  But nothing is guaranteed to produce the same results, no matter how perfect those SOPs are.  You only truly know what you've already _done_ and there is no way to _know_ with absolute certainty what you're _doing_ now beyond a hopeful extrapolation based on previous experience.
+
+So, why does any of this matter?
+
+When I was a programmer, I was a very good programmer.  Coding always came easily to me.  I started coding websites in the mid-90s and my skills grew alongside the web.  It was the Wild West in the beginning with no standards or best practices.  We didn't know what we were doing then because it had literally never been done before.  By the time things stabilized, I was already "the expert" on the team.  I had created many great apps and I was respected for my experience and knowledge in programming.
+
+I spent about 6 years at the IU Network Science Institute (IUNI) as a web developer and lead engineer.  Beyond coding and leading the development of most of the software-related projects, I also helped develop all the infrastructure, procedures, and standards that we used.  I'm not saying this to sound impressive, but to provide context for what happened next.  Various events transpired that resulted in me leaving that team.  Several months later, they called me up and asked me to take over as IT Director from my old boss, Val.  I didn't get this job because I was a great programmer (this job had no programming) or because I was overly skilled as an IT Director (I had led plenty of software projects, but never led a center).  My value here was that I knew where all the skeletons were buried and the obscure knowledge in my brain was the only way to maintain any continuity in the ongoing technical projects.
+
+My Tech Director career can be broken down into distinct phases, each of which required a different type of value-add.
+
+Phase 1 was rebuilding.  When I was brought on to take over as Director, the tech team was a shell of what it was when I had left.  All but one of the programmers had left.  Projects had stalled and were bleeding money.  The new hires brought in to replace the old team had started two weeks before and were provided no direction.  My mission was to write down everything that Val didn't write down and rebuild the tech team. I didn't know what I was doing, but I did the best I could, and I succeeded because of what I _did_ know:  the projects, the people, and the missing pieces.
+
+Phase 2 was the reorg.  Just as my new team was settling into a routine and things were stabilizing, they decided to shutter the Network Science Institute.  We were able to do some creative accounting and restructuring so that we would now be working full-time for the Observatory on Social Media (OSoMe), whom we frequently collaborated with.  My new mission was to keep up morale so the team stayed together, sunset non-OSoMe projects, and restart older OSoMe projects that could now be resourced.  This time I succeeded because I knew what it was like to be a programmer in unsure times, I'm a likeable person (allegedly), and I was there when most of the OSoMe projects started.  Still not because I knew what I was doing.
+
+Phase 3 is directing.  Now that there's no extra organizational chaos, my mission is to actually be a director.  The only transition is an influx of new faculty over the past couple of years who rely on my expertise as OSoMe Tech Director.  There's no IUNI baggage.  We've sunset all the pain points.  The current projects are mostly greenfield.  But that also means my one major value-add - 8 years of institutional knowledge - is no longer valuable. I still don't know what I'm doing but now I don't even know what I'm _supposed_ to be doing.
+
+I've [written previously](./why-you-need-a-nemesis/) about not needing a mentor.  Well, I don't know if that's entirely true anymore.  I didn't have a mentor and I'm here, in over my head, drowning.  They'll say it's impostor syndrome and that I'm not actually failing at my job.  If the job is "continue to build cool stuff, write tutorials for grad students, and keep your team together", then no... I'm not failing at my job.  But is that the job of a director?  I don't know because I didn't have a mentor to teach me what a director was.
+
+At his funeral, I said Val was the closest thing to a mentor that I had.  That's probably true.  I think a lot about Val as I try to figure out what a director is supposed to do.  I literally have the same position that he did, so I should probably try to do what he did, right?  But did he even know what he was doing?  Or was he just doing the best he could and trying to figure it out as he went along, too?
+
+I think about all the things that I deal with and wonder how Val handled it for so long.  But then it occurred to me: He didn't handle any of the things I'm dealing with.  We have the same title and the same position number in the system, I guess, but the job itself is different.  Val's job was to establish something that never existed.  There's no way he could have known what he was doing.  And surely he couldn't have known what I'd be doing.
+
+I've got to know all the HR policies for my team (IUNI had an HR person).  All the security policies for the grad students (what even _was_ AI in 2015?).  All the data policies for the faculty (we had a data manager).
+
+There's the grad student consulting initiative.  The faculty consulting.  The APIs that are available.  The APIs that are _not_ available.  The data requests.  The current state of geopoltical data sharing and social media research.
+
+Then there's my team itself.  Mentoring.  Coaching.  Career progression.  Performance reviews.  Project management.  Every now and then I still do a little bit of programming to help out.  And don't get me started on the AI-assisted coding.
+
+I'm not complaining.  I like wath I do.  It can just be a little overwhelming at times.  And I don't have 20 years of experience to back any of it up except the occasional paired debugging session or architectural decision.  The rest of it is just something I've never done or been on the receiving end of.  Objectively, I don't know what I'm doing.
+
+But that's okay.  I do my best, own my mistakes, and keep learning.  The 20 years of programming experience isn't my strength anymore.  It's my ability to adapt and figure it out to get it done.
+
+I'll be the first to tell you that I'm not the greatest Tech Director of all time.  I'm just an okay Tech Director.  And that's okay.  No two director jobs will ever be the same, just like no two experiences will be the same.  Companies are different.  Industries are different.  Teams are different.  No one who takes a new job or is put in a new situation is ever going to know what they're doing.
+
+I think that anyone who believes they know exactly what they're doing risks fooling themselves into stagnation.  If you know what you're doing, then there's no reason to learn or grow or try anything new.  If I knew what I was doing, I'd just keep doing it and live happily ever after.  But that's not how the world works.  The world continues to turn.  The Earth continues to orbit the Sun.  The solar system continues to spiral toward the big black hole at the center of the galaxy.  Nothing is static and things will always change.  I think it's a lot better to admit that you don't know what you're doing and continue to adapt to the ever changing challenges in front of you.
+
+Sometimes I do wish I knew what I was doing.  The unknown causes me a great deal of anxiety.  So I have to remind myself that it's literally impossible to _know_ anything, go easier on myself, and then pretend that it's excitement instead of anxiety.  Because it really should be exciting.
+
+> The only true wisdom consists in knowing that you know nothing.
+> - _Socrates (via Bill and Ted)_
