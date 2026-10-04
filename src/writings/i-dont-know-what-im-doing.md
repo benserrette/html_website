@@ -55,6 +55,5 @@ I think that anyone who believes they know exactly what they're doing risks fool
 
 Sometimes I do wish I knew what I was doing.  The unknown causes me a great deal of anxiety.  So I have to remind myself that it's literally impossible to _know_ anything, go easier on myself, and then pretend that it's excitement instead of anxiety.  Because it really should be exciting.
 
-> The only true wisdom consists in knowing that you know nothing.
-> 
+> The only true wisdom consists in knowing that you know nothing.  
 > &mdash; _Socrates (via Bill and Ted)_
